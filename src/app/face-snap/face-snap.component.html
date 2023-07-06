@@ -1,0 +1,6 @@
+<div class="face-snap-card" [ngClass]="{ snapped: buttonText === 'Oops, un Snap!' }"> <!-- afficher le contenu d'une variable dans le template:
+    la string interpolation -->
+    <h2>{{ faceSnap.title | uppercase }}</h2> <!-- pipe majuscules -->
+    <p>{{ faceSnap.description }}</p>
+    <button (click)="onViewFaceSnap()">VIEW</button>
+</div>
